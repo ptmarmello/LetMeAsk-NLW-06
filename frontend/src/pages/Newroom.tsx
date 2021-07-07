@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import illustrationImg from '../assets/images/illustration.svg';
 import logoTmg from '../assets/images/logo.svg'
 
@@ -5,6 +6,8 @@ import '../styles/auth.scss';
 import { Button } from '../components/Button';
 
 export function Newroom() {
+
+
     return(
         <div id="page-auth">
             <aside>
@@ -25,7 +28,7 @@ export function Newroom() {
                             Entrar
                         </Button>
                     </form>
-                    <p>Quer entrar em uma sala existente? <a href="google.com"> Clique Aqui!</a></p>
+                    <p>Quer entrar em uma sala existente? <Link to="/"> Clique Aqui!</Link></p>
                 </div>
             </main>
         </div>
